@@ -1,0 +1,97 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf3;
+            color: #30251f;
+            padding: 40px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #a84320;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #766b63;
+            margin-bottom: 35px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px #00000012;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .menu-info p {
+            font-size: 14px;
+            color: #766b63;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #a84320;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .menu-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 5%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-card img {
+                height: 220px;
+            }
+        }
